@@ -13,120 +13,120 @@ colors:
 # Labels
 labels: &common
   "bug":
-    color: &bug
+    color: *bug
     description: Something isn't working
   "reprod":
-    color: &bug
+    color: *bug
     description: Something isn't working and we are able to reproduce the problem
     siblings: ["bug"]
   "not-reprod":
-    color: &bug
+    color: *bug
     description: Something isn't working and we are not able to reliably reproduce the problem
     siblings: ["bug"]
   "feature":
-    color: &type
+    color: *type
     description: New feature or request
   "enhancement":
-    color: &type
+    color: *type
     description: Small enhancement
   "task":
-    color: &type
+    color: *type
     description: Work break-down from feature to manage better
   "duplicate":
-    color: &info
+    color: *info
     description: This issue or pull request already exists
   "invalid":
-    color: &info
+    color: *info
     description: This doesn't seem right
   "question":
-    color: &info
+    color: *info
     description: Further information is requested
   "wontfix":
-    color: &info
+    color: *info
     description: This issue or pull request will not be worked on
   "company email needed":
-    color: &process
+    color: *process
     description: A company-wide email will need to be sent before this pull request goes into production
   "db change needed":
-    color: &process
+    color: *process
     description: This pull request requires a change to the database in order to function
   "merge on hold":
-    color: &process
+    color: *process
     description: Do not merge until explicitly told to do so
   "high priority":
-    color: &high-priority
+    color: *high-priority
     description: This issue or pull request is urgent and should be worked on before all others
   "medium priority":
-    color: &med-priority
+    color: *med-priority
     description: This issue or pull request is somewhat urgent but can wait if needed
   "low priority":
-    color: &low-priority
+    color: *low-priority
     description: This issue or pull request is not at all urgent
   "code review pending":
-    color: &status
+    color: *status
     description: Currently awaiting a code review
   "code review approved":
-    color: &status
+    color: *status
     description: Code review is complete and this pull request is ready to move forward for testing
   "code change required":
-    color: &status
+    color: *status
     description: Currently awaiting changes to the code before further review
   "in progress":
-    color: &status
+    color: *status
     description: This issue is currently assigned and being worked on
   "in qa":
-    color: &status
+    color: *status
     description: This pull request is currently waiting for testing by QA
   "qa changes required":
-    color: &status
+    color: *status
     description: This pull request has been reviewed by QA and changes are required before continuing
   "qa approved":
-    color: &status
+    color: *status
     description: This pull request has been reviewed by QA and approved
   "on hold":
-    color: &status
+    color: *status
     description: This issue or pull request is currently waiting on another issue or pull request to be resolved before work can continue
   "all roles":
-    color: &user-role
+    color: *user-role
     description: This issue or pull request affects all user roles
   "loan officer":
-    color: &user-role
+    color: *user-role
     description: This issue or pull request affects Loan Officers
   "loan officer assistant":
-    color: &user-role
+    color: *user-role
     description: This issue or pull request affects Loan Officer Assistants
   "processor":
-    color: &user-role
+    color: *user-role
     description: This issue or pull request affects Processors
   "processor assistant":
-    color: &user-role
+    color: *user-role
     description: processor assistant
   "underwriter":
-    color: &user-role
+    color: *user-role
     description: This issue or pull request affects Underwriters
   "closer":
-    color: &user-role
+    color: *user-role
     description: This issue or pull request affects Closers
   "funder":
-    color: &user-role
+    color: *user-role
     description: This issue or pull request affects Funders
   "post closer":
-    color: &user-role
+    color: *user-role
     description: This issue or pull request affects Post Closers
   "specialists":
-    color: &user-role
+    color: *user-role
     description: This issue or pull request affects Specialists
   "support":
-    color: &user-role
+    color: *user-role
     description: This issue or pull request affects the Support team
   "trainers":
-    color: &user-role
+    color: *user-role
     description: This issue or pull request affects the Corporate Training team
   "compliance":
-    color: &user-role
+    color: *user-role
     description: This issue or pull request affects the Compliance team
   "lock desk":
-    color: &user-role
+    color: *user-role
     description: This issue or pull request affects the Lock Desk team
 
 # Repositories
