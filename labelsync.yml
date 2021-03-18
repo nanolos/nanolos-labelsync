@@ -1,54 +1,133 @@
 # Colors
 colors:
-  area: &area "#FFD700"
-  kind: &kind "#3B5BDB"
-  status: &status "#F8F9FA"
-  bug: &bug "#EE0000"
-  priority: &priority "#F783AC"
-  scope: &scope "#27CF79"
-  team: &team'#FDF4E8'
-  release: &release "#A5D8ff"
-  process: &process' "#EB9100"
+  bug: &bug "#EA9999"
+  type: &type "#C9DAF8"
+  info: &info "#B4A7D6"
+  status: &status "#FFFF6D"
+  high-priority: &high-priority "#B60205"
+  med-priority: &med-priority "#DB6D00"
+  low-priority: &low-priority "#D9D9D9"
+  process: &process' "#D9EAD3"
+  user-role: &user-role "#24FF24"
 
 # Labels
 labels: &common
-  "bug/0-needs-info":
+  "bug":
     color: &bug
-    description: More information is needed for reproduction.
-    siblings: ["kind/bug"]
-  "bug/1-repro-available":
+    description: Something isn't working
+  "reprod":
     color: &bug
-    description: A reproduction exists and needs to be confirmed.
-    siblings: ["kind/bug"]
-  "bug/2-confirmed":
+    description: Something isn't working and we are able to reproduce the problem
+    siblings: ["bug"]
+  "not-reprod":
     color: &bug
-    description: We have confirmed that this is a bug.
-    siblings: ["kind/bug"]
-  "kind/bug":
-    color: &bug
-    description: A reported bug.
-    alias: ["bug"]
-  "kind/regression":
-    color: &kind
-    description: A reported bug in functionality that used to work before.
-  "kind/feature":
-    color: &kind
-    description: A request for a new feature.
-    alias: ["enhancement"]
-  "kind/improvement":
-    color: &kind
-    description: An improvement to existing feature and code.
-  "kind/docs":
-    color: &kind
-    description: A documentation change is required.
-    alias: ["documentation"]
-  "kind/discussion":
-    color: &kind
-    description: Discussion is required.
-  "kind/question":
-    color: &kind
-    description: Developer asked a question. No code changes required.
-    alias: ["question"]
+    description: Something isn't working and we are not able to reliably reproduce the problem
+    siblings: ["bug"]
+  "feature":
+    color: &type
+    description: New feature or request
+  "enhancement":
+    color: &type
+    description: Small enhancement
+  "task":
+    color: &type
+    description: Work break-down from feature to manage better
+  "duplicate":
+    color: &info
+    description: This issue or pull request already exists
+  "invalid":
+    color: &info
+    description: This doesn't seem right
+  "question":
+    color: &info
+    description: Further information is requested
+  "wontfix":
+    color: &info
+    description: This issue or pull request will not be worked on
+  "company email needed":
+    color: &process
+    description: A company-wide email will need to be sent before this pull request goes into production
+  "db change needed":
+    color: &process
+    description: This pull request requires a change to the database in order to function
+  "merge on hold":
+    color: &process
+    description: Do not merge until explicitly told to do so
+  "high priority":
+    color: &high-priority
+    description: This issue or pull request is urgent and should be worked on before all others
+  "medium priority":
+    color: &med-priority
+    description: This issue or pull request is somewhat urgent but can wait if needed
+  "low priority":
+    color: &low-priority
+    description: This issue or pull request is not at all urgent
+  "code review pending":
+    color: &status
+    description: Currently awaiting a code review
+  "code review approved":
+    color: &status
+    description: Code review is complete and this pull request is ready to move forward for testing
+  "code change required":
+    color: &status
+    description: Currently awaiting changes to the code before further review
+  "in progress":
+    color: &status
+    description: This issue is currently assigned and being worked on
+  "in qa":
+    color: &status
+    description: This pull request is currently waiting for testing by QA
+  "qa changes required":
+    color: &status
+    description: This pull request has been reviewed by QA and changes are required before continuing
+  "qa approved":
+    color: &status
+    description: This pull request has been reviewed by QA and approved
+  "on hold":
+    color: &status
+    description: This issue or pull request is currently waiting on another issue or pull request to be resolved before work can continue
+  "all roles":
+    color: &user-role
+    description: This issue or pull request affects all user roles
+  "loan officer":
+    color: &user-role
+    description: This issue or pull request affects Loan Officers
+  "loan officer assistant":
+    color: &user-role
+    description: This issue or pull request affects Loan Officer Assistants
+  "processor":
+    color: &user-role
+    description: This issue or pull request affects Processors
+  "processor assistant":
+    color: &user-role
+    description: processor assistant
+  "underwriter":
+    color: &user-role
+    description: This issue or pull request affects Underwriters
+  "closer":
+    color: &user-role
+    description: This issue or pull request affects Closers
+  "funder":
+    color: &user-role
+    description: This issue or pull request affects Funders
+  "post closer":
+    color: &user-role
+    description: This issue or pull request affects Post Closers
+  "specialists":
+    color: &user-role
+    description: This issue or pull request affects Specialists
+  "support":
+    color: &user-role
+    description: This issue or pull request affects the Support team
+  "trainers":
+    color: &user-role
+    description: This issue or pull request affects the Corporate Training team
+  "compliance":
+    color: &user-role
+    description: This issue or pull request affects the Compliance team
+  "lock desk":
+    color: &user-role
+    description: This issue or pull request affects the Lock Desk team
 
 # Repositories
 repos:
@@ -56,139 +135,104 @@ repos:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   rate-tracker:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   instant-quote:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   TeamCitySettings:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   loan-application:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   my-account:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   flux:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   nano-models:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   dev-prompt:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   Plaid.NET-POC:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   PlaidTesting:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   SQL:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   nano-components:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   API:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   Flow:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   Tools:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   Shared:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   Everything:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   system-settings:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   knowledge-base:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
+  nanolos-labelsync:
+    config: 
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *common
