@@ -3,7 +3,7 @@ colors:
   bug: &bug "#EA9999"
   type: &type "#C9DAF8"
   info: &info "#B4A7D6"
-  status: &status "#FFFF6D"
+  status: &status "#FFFF6E"
   high-priority: &high-priority "#B60205"
   med-priority: &med-priority "#DB6D00"
   low-priority: &low-priority "#D9D9D9"
