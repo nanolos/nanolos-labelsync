@@ -1,7 +1,7 @@
 # Colors
 colors:
   bug: &bug "#EA9999"
-  type: &type "#C9DAF8"
+  type: &type "#1D76DB"
   info: &info "#B4A7D6"
   status: &status "#FFFF6E"
   high-priority: &high-priority "#B60205"
