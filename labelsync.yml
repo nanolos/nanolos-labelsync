@@ -85,7 +85,7 @@ labels: &common
     description: This pull request has been reviewed by QA and approved
   "on hold":
     color: *status
-    description: This issue or pull request is currently waiting on another issue or pull request to be resolved before work can continue
+    description: This issue or PR is waiting on another issue or PR to be resolved before work can continue
   "all roles":
     color: *user-role
     description: This issue or pull request affects all user roles
