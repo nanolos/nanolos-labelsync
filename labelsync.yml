@@ -23,6 +23,9 @@ labels: &common
     color: *bug
     description: Something isn't working and we are not able to reliably reproduce the problem
     siblings: ["bug"]
+  "perf":
+    color: *bug
+    description: This issue or pull request directly affects perfomance
   "feature":
     color: *type
     description: New feature or request
