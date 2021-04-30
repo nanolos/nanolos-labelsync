@@ -26,6 +26,9 @@ labels: &common
   "perf":
     color: *bug
     description: This issue or pull request directly affects perfomance
+  "security":
+    color: *bug
+    description: This issue or pull request affects the security of the system 
   "feature":
     color: *type
     description: New feature or request
@@ -38,9 +41,6 @@ labels: &common
   "refactor":
     color: *type
     description: A restructuring of existing code that pays off technical debt
-  "security":
-    color: *type
-    description: This issue or pull request affects the security of the system 
   "duplicate":
     color: *info
     description: This issue or pull request already exists
