@@ -35,6 +35,12 @@ labels: &common
   "task":
     color: *type
     description: Work break-down from feature to manage better
+  "refactor":
+    color: *type
+    description: A restructuring of existing code that pays off technical debt
+  "security":
+    color: *type
+    description: This issue or pull request affects the security of the system 
   "duplicate":
     color: *info
     description: This issue or pull request already exists
