@@ -197,12 +197,12 @@ repos:
       <<: *common
   nano-components:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
   nano-models:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
   rate-tracker:
@@ -218,7 +218,7 @@ repos:
   # Misc ############################
   dev-prompt:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
   knowledge-base:
@@ -233,22 +233,22 @@ repos:
       <<: *common
   salesforce-sandbox:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
   TeamCitySettings:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
   # Archived ########################
   Plaid.NET-POC:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
   PlaidTesting:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
