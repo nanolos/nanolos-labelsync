@@ -74,6 +74,9 @@ labels: &common
   "low priority":
     color: *low-priority
     description: This issue or pull request is not at all urgent
+  "backlog":
+    color: *status
+    description: Accumulated list of unfinished work or issues
   "code review pending":
     color: *status
     description: Currently awaiting a code review
