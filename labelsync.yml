@@ -35,6 +35,9 @@ labels: &common
   "enhancement":
     color: *type
     description: Small enhancement
+  "hack":
+    color: *type
+    description: Quick hack to resolve an issue
   "task":
     color: *type
     description: Work break-down from feature to manage better
@@ -71,6 +74,9 @@ labels: &common
   "low priority":
     color: *low-priority
     description: This issue or pull request is not at all urgent
+  "backlog":
+    color: *status
+    description: Accumulated list of unfinished work or issues
   "code review pending":
     color: *status
     description: Currently awaiting a code review
@@ -140,22 +146,39 @@ labels: &common
 
 # Repositories
 repos:
-  salesforce-sandbox:
+  # BackEnd #########################
+  API:
     config:
       removeUnconfiguredLabels: false
     labels:
       <<: *common
-  rate-tracker:
+  Everything:
     config:
       removeUnconfiguredLabels: false
     labels:
       <<: *common
-  instant-quote:
+  Flow:
     config:
       removeUnconfiguredLabels: false
     labels:
       <<: *common
-  TeamCitySettings:
+  Shared:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+  SQL:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+  Tools:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+  # FrontEnd ########################
+  flux:
     config:
       removeUnconfiguredLabels: false
     labels:
@@ -170,62 +193,22 @@ repos:
       removeUnconfiguredLabels: false
     labels:
       <<: *common
-  flux:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      <<: *common
-  nano-models:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      <<: *common
-  dev-prompt:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      <<: *common
-  Plaid.NET-POC:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      <<: *common
-  PlaidTesting:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      <<: *common
-  SQL:
+  instant-quote:
     config:
       removeUnconfiguredLabels: false
     labels:
       <<: *common
   nano-components:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
-  API:
+  nano-models:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
-  Flow:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      <<: *common
-  Tools:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      <<: *common
-  Shared:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      <<: *common
-  Everything:
+  rate-tracker:
     config:
       removeUnconfiguredLabels: false
     labels:
@@ -235,6 +218,12 @@ repos:
       removeUnconfiguredLabels: false
     labels:
       <<: *common
+  # Misc ############################
+  dev-prompt:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *common
   knowledge-base:
     config:
       removeUnconfiguredLabels: false
@@ -242,6 +231,27 @@ repos:
       <<: *common
   nanolos-labelsync:
     config: 
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *common
+  salesforce-sandbox:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *common
+  TeamCitySettings:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *common
+  # Archived ########################
+  Plaid.NET-POC:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *common
+  PlaidTesting:
+    config:
       removeUnconfiguredLabels: true
     labels:
       <<: *common
