@@ -44,6 +44,9 @@ labels: &common
   "refactor":
     color: *type
     description: A restructuring of existing code that pays off technical debt
+  "documentation":
+    color: *info
+    description: Requires additional documentation
   "duplicate":
     color: *info
     description: This issue or pull request already exists
@@ -149,32 +152,32 @@ repos:
   # BackEnd #########################
   API:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
   Everything:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
   Flow:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
   Shared:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
   SQL:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
   Tools:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
   # FrontEnd ########################
@@ -190,12 +193,12 @@ repos:
       <<: *common
   my-account:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
   instant-quote:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
   nano-components:
@@ -210,12 +213,12 @@ repos:
       <<: *common
   rate-tracker:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
   system-settings:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
   # Misc ############################
@@ -226,7 +229,7 @@ repos:
       <<: *common
   knowledge-base:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
   nanolos-labelsync:
