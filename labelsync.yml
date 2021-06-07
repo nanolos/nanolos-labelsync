@@ -251,13 +251,13 @@ repos:
     labels:
       <<: *common
   # Archived ########################
-  Plaid.NET-POC:
-    config:
-      removeUnconfiguredLabels: true
-    labels:
-      <<: *common
-  PlaidTesting:
-    config:
-      removeUnconfiguredLabels: true
-    labels:
-      <<: *common
+  # Plaid.NET-POC:
+    # config:
+      # removeUnconfiguredLabels: true
+    # labels:
+      # <<: *common
+  # PlaidTesting:
+    # config:
+      # removeUnconfiguredLabels: true
+    # labels:
+      # <<: *common
