@@ -104,6 +104,9 @@ labels: &common
   "on hold":
     color: *status
     description: This issue or PR is waiting on another issue or PR to be resolved before work can continue
+  "do not work":
+    color: *status
+    description: Do not work on this issue or PR unless explicitly told to do so
   "all roles":
     color: *user-role
     description: This issue or pull request affects all user roles
@@ -243,17 +246,6 @@ repos:
     labels:
       <<: *common
   TeamCitySettings:
-    config:
-      removeUnconfiguredLabels: true
-    labels:
-      <<: *common
-  # Archived ########################
-  Plaid.NET-POC:
-    config:
-      removeUnconfiguredLabels: true
-    labels:
-      <<: *common
-  PlaidTesting:
     config:
       removeUnconfiguredLabels: true
     labels:
