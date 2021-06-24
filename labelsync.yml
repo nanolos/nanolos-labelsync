@@ -59,9 +59,15 @@ labels: &common
   "wontfix":
     color: *info
     description: This issue or pull request will not be worked on
+  "primary pr":
+    color: *info
+    description: This is the primary PR for a group of PRs relating to a single feature/enhancement/bug fix
   "company email needed":
     color: *process
     description: A company-wide email will need to be sent before this pull request goes into production
+  "happyfox followup required":
+    color: *process
+    description: This issue or PR is related to an active happyfox ticket that requires follow up
   "db change needed":
     color: *process
     description: This pull request requires a change to the database in order to function
