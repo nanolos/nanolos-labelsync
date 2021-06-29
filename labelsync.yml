@@ -62,6 +62,9 @@ labels: &common
   "primary pr":
     color: *info
     description: This is the primary PR for a group of PRs relating to a single feature/enhancement/bug fix
+  "pr consolidation required":
+    color: *info
+    description: Multiple PRs need to be consolidated for easier QA testing
   "company email needed":
     color: *process
     description: A company-wide email will need to be sent before this pull request goes into production
@@ -95,6 +98,9 @@ labels: &common
   "code change required":
     color: *status
     description: Currently awaiting changes to the code before further review
+  "dev testing":
+    color: *status
+    description: This issue is currently code complete and dev is testing
   "in progress":
     color: *status
     description: This issue is currently assigned and being worked on
