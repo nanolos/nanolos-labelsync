@@ -65,6 +65,9 @@ labels: &common
   "pr consolidation required":
     color: *info
     description: Multiple PRs need to be consolidated for easier QA testing
+  "jeff needed":
+    color: *info
+    description: This issue or PR needs input from Jeff before it can proceed
   "company email needed":
     color: *process
     description: A company-wide email will need to be sent before this pull request goes into production
@@ -119,6 +122,9 @@ labels: &common
   "do not work":
     color: *status
     description: Do not work on this issue or PR unless explicitly told to do so
+  "retest":
+    color: *status
+    description: This PR has already been tested by QA and is ready for retest
   "all roles":
     color: *user-role
     description: This issue or pull request affects all user roles
@@ -161,6 +167,9 @@ labels: &common
   "lock desk":
     color: *user-role
     description: This issue or pull request affects the Lock Desk team
+  "borrower":
+    color: *user-role
+    description: This issue or pull request affects borrowers directly
 
 # Repositories
 repos:
