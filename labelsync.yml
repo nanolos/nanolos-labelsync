@@ -271,3 +271,8 @@ repos:
       removeUnconfiguredLabels: true
     labels:
       <<: *common
+  sites:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *common
