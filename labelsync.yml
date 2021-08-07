@@ -12,6 +12,7 @@ colors:
 
 # Labels
 labels: &common
+  # bug #########################
   "bug":
     color: *bug
     description: Something isn't working
@@ -29,6 +30,7 @@ labels: &common
   "security":
     color: *bug
     description: This issue or pull request affects the security of the system 
+  # type #########################
   "feature":
     color: *type
     description: New feature or request
@@ -44,6 +46,7 @@ labels: &common
   "refactor":
     color: *type
     description: A restructuring of existing code that pays off technical debt
+  # info #########################
   "documentation":
     color: *info
     description: Requires additional documentation
@@ -68,6 +71,7 @@ labels: &common
   "jeff needed":
     color: *info
     description: This issue or PR needs input from Jeff before it can proceed
+  # process #########################
   "company email needed":
     color: *process
     description: A company-wide email will need to be sent before this pull request goes into production
@@ -80,6 +84,7 @@ labels: &common
   "merge on hold":
     color: *process
     description: Do not merge until explicitly told to do so
+  # priority #########################
   "high priority":
     color: *high-priority
     description: This issue or pull request is urgent and should be worked on before all others
@@ -89,6 +94,7 @@ labels: &common
   "low priority":
     color: *low-priority
     description: This issue or pull request is not at all urgent
+  # status #########################
   "backlog":
     color: *status
     description: Accumulated list of unfinished work or issues
@@ -125,6 +131,7 @@ labels: &common
   "retest":
     color: *status
     description: This PR has already been tested by QA and is ready for retest
+  # user-role #########################
   "all roles":
     color: *user-role
     description: This issue or pull request affects all user roles
@@ -216,6 +223,11 @@ repos:
     labels:
       <<: *common
   my-account:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *common
+  my-account2:
     config:
       removeUnconfiguredLabels: true
     labels:
