@@ -74,7 +74,7 @@ labels: &common
   "jeff needed":
     color: *info
     description: This issue or PR needs input from Jeff before it can proceed
-  "technical debt"
+  "technical debt":
     color: *info
     description: Technical debt incurred during previous development changes
   # process #########################
