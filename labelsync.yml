@@ -46,6 +46,9 @@ labels: &common
   "refactor":
     color: *type
     description: A restructuring of existing code that pays off technical debt
+  "dependencies":
+    color: *type
+    description: Pull requests that update a dependency file (dependabot)
   # info #########################
   "documentation":
     color: *info
@@ -71,6 +74,9 @@ labels: &common
   "jeff needed":
     color: *info
     description: This issue or PR needs input from Jeff before it can proceed
+  "technical debt"
+    color: *info
+    description: Technical debt incurred during previous development changes
   # process #########################
   "company email needed":
     color: *process
@@ -214,12 +220,12 @@ repos:
   # FrontEnd ########################
   flux:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
   loan-application:
     config:
-      removeUnconfiguredLabels: false
+      removeUnconfiguredLabels: true
     labels:
       <<: *common
   my-account:
