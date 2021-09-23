@@ -78,9 +78,9 @@ labels: &common
     color: *info
     description: Technical debt incurred during previous development changes
   # process #########################
-  "company email needed":
+  "email followup required":
     color: *process
-    description: A company-wide email will need to be sent before this pull request goes into production
+    description: This issue or PR requires follow up with affected users before merging
   "happyfox followup required":
     color: *process
     description: This issue or PR is related to an active happyfox ticket that requires follow up
