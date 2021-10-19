@@ -8,7 +8,6 @@ colors:
   med-priority: &med-priority "#DB6D00"
   low-priority: &low-priority "#D9D9D9"
   process: &process "#D9EAD3"
-  user-role: &user-role "#24FF24"
 
 # Labels
 labels: &common
@@ -137,52 +136,6 @@ labels: &common
   "retest":
     color: *status
     description: This PR has already been tested by QA and is ready for retest
-  # user-role #########################
-  "all roles":
-    color: *user-role
-    description: This issue or pull request affects all user roles
-  "loan officer":
-    color: *user-role
-    description: This issue or pull request affects Loan Officers
-  "loan officer assistant":
-    color: *user-role
-    description: This issue or pull request affects Loan Officer Assistants
-  "processor":
-    color: *user-role
-    description: This issue or pull request affects Processors
-  "processor assistant":
-    color: *user-role
-    description: processor assistant
-  "underwriter":
-    color: *user-role
-    description: This issue or pull request affects Underwriters
-  "closer":
-    color: *user-role
-    description: This issue or pull request affects Closers
-  "funder":
-    color: *user-role
-    description: This issue or pull request affects Funders
-  "post closer":
-    color: *user-role
-    description: This issue or pull request affects Post Closers
-  "specialists":
-    color: *user-role
-    description: This issue or pull request affects Specialists
-  "support":
-    color: *user-role
-    description: This issue or pull request affects the Support team
-  "trainers":
-    color: *user-role
-    description: This issue or pull request affects the Corporate Training team
-  "compliance":
-    color: *user-role
-    description: This issue or pull request affects the Compliance team
-  "lock desk":
-    color: *user-role
-    description: This issue or pull request affects the Lock Desk team
-  "borrower":
-    color: *user-role
-    description: This issue or pull request affects borrowers directly
 
 # Repositories
 repos:
