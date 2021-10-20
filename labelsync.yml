@@ -253,6 +253,11 @@ repos:
       removeUnconfiguredLabels: true
     labels:
       <<: *common
+  nano-utils:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *common
   rate-tracker:
     config:
       removeUnconfiguredLabels: true
