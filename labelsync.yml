@@ -76,6 +76,9 @@ labels: &common
   "technical debt":
     color: *info
     description: Technical debt incurred during previous development changes
+  "in monday":
+    color: *info
+    description: Temporary label for project management
   # process #########################
   "email followup required":
     color: *process
