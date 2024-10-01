@@ -1,145 +1,42 @@
-# Colors
-colors:
-  bug: &bug "#EA9999"
-  type: &type "#1D76DB"
-  info: &info "#B4A7D6"
-  status: &status "#FFFF6E"
-  high-priority: &high-priority "#B60205"
-  med-priority: &med-priority "#DB6D00"
-  low-priority: &low-priority "#D9D9D9"
-  process: &process "#D9EAD3"
-
 # Labels
 labels: &common
   # bug #########################
   "bug":
-    color: *bug
-    description: Something isn't working
-  "reprod":
-    color: *bug
-    description: Something isn't working and we are able to reproduce the problem
-    siblings: ["bug"]
-  "not-reprod":
-    color: *bug
-    description: Something isn't working and we are not able to reliably reproduce the problem
-    siblings: ["bug"]
-  "perf":
-    color: *bug
-    description: This issue or pull request directly affects perfomance
-  "security":
-    color: *bug
-    description: This issue or pull request affects the security of the system 
-  # type #########################
-  "feature":
-    color: *type
-    description: New feature or request
-  "enhancement":
-    color: *type
-    description: Small enhancement
-  "hack":
-    color: *type
-    description: Quick hack to resolve an issue
-  "task":
-    color: *type
-    description: Work break-down from feature to manage better
+    color: "FF2323"
+    description: An existing feature isn't working/produces errors
+  # refactor #########################
   "refactor":
-    color: *type
-    description: A restructuring of existing code that pays off technical debt
-  "dependencies":
-    color: *type
-    description: Pull requests that update a dependency file (dependabot)
-  # info #########################
-  "documentation":
-    color: *info
-    description: Requires additional documentation
-  "duplicate":
-    color: *info
-    description: This issue or pull request already exists
-  "invalid":
-    color: *info
-    description: This doesn't seem right
-  "question":
-    color: *info
-    description: Further information is requested
-  "wontfix":
-    color: *info
-    description: This issue or pull request will not be worked on
-  "primary pr":
-    color: *info
-    description: This is the primary PR for a group of PRs relating to a single feature/enhancement/bug fix
-  "pr consolidation required":
-    color: *info
-    description: Multiple PRs need to be consolidated for easier QA testing
-  "jeff needed":
-    color: *info
-    description: This issue or PR needs input from Jeff before it can proceed
-  "technical debt":
-    color: *info
-    description: Technical debt incurred during previous development changes
-  "in monday":
-    color: *info
-    description: Temporary label for project management
+    color: "3CB44B"
+    description: Restructure existing code to pay off a technical debt
+  # upgrade #########################
+  "upgrade":
+    color: "aaffc3"
+    description: Restructure existing code to pay off a technical debt
+  # performance #########################
+  "performance":
+    color: "FFE119"
+    description: Restructure/create new code to improve perfomance
+    alias: ["perf"]
+  # hack-a-thon ######################### 
+  "hack-a-thon":
+    color: "F58231"
+    description: Quick, surgical changes to be made in the weekly hack-a-thon hour
+  # support issue #########################
+  "support issue":
+    color: "4363D8"
+    description: Issue was created because of a problem brought up to support
   # process #########################
-  "email followup required":
-    color: *process
-    description: This issue or PR requires follow up with affected users before merging
-  "happyfox followup required":
-    color: *process
-    description: This issue or PR is related to an active happyfox ticket that requires follow up
-  "db change needed":
-    color: *process
-    description: This pull request requires a change to the database in order to function
-  "merge on hold":
-    color: *process
-    description: Do not merge until explicitly told to do so
-  # priority #########################
-  "high priority":
-    color: *high-priority
-    description: This issue or pull request is urgent and should be worked on before all others
-  "medium priority":
-    color: *med-priority
-    description: This issue or pull request is somewhat urgent but can wait if needed
-  "low priority":
-    color: *low-priority
-    description: This issue or pull request is not at all urgent
-  # status #########################
-  "backlog":
-    color: *status
-    description: Accumulated list of unfinished work or issues
-  "code review pending":
-    color: *status
-    description: Currently awaiting a code review
-  "code review approved":
-    color: *status
-    description: Code review is complete and this pull request is ready to move forward for testing
-  "code change required":
-    color: *status
-    description: Currently awaiting changes to the code before further review
-  "dev testing":
-    color: *status
-    description: This issue is currently code complete and dev is testing
-  "in progress":
-    color: *status
-    description: This issue is currently assigned and being worked on
-  "in qa":
-    color: *status
-    description: This pull request is currently waiting for testing by QA
-  "qa changes required":
-    color: *status
-    description: This pull request has been reviewed by QA and changes are required before continuing
-  "qa approved":
-    color: *status
-    description: This pull request has been reviewed by QA and approved
-  "on hold":
-    color: *status
-    description: This issue or PR is waiting on another issue or PR to be resolved before work can continue
-  "do not work":
-    color: *status
-    description: Do not work on this issue or PR unless explicitly told to do so
-  "retest":
-    color: *status
-    description: This PR has already been tested by QA and is ready for retest
-
+  "followup required":
+    color: "BA46DD"
+    description: This change requires follow up with affected users
+  # support followup required #########################
+  "support followup required":
+    color: "DCBEFF"
+    description: The support team to let a user know when this is done
+  # canceled #########################
+  "canceled":
+    color: "333333"
+    description: Issue not needed anymore
 # Repositories
 repos:
   # BackEnd #########################
