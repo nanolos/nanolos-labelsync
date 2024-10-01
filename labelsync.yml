@@ -25,7 +25,7 @@ labels: &common
   "support issue":
     color: "4363D8"
     description: Issue was created because of a problem brought up to support
-  # process #########################
+  # followup required #########################
   "followup required":
     color: "BA46DD"
     description: This change requires follow up with affected users
