@@ -4,39 +4,43 @@ labels: &common
   "bug":
     color: "FF2323"
     description: An existing feature isn't working/produces errors
-  # refactor #########################
-  "refactor":
-    color: "3CB44B"
-    description: Restructure existing code to pay off a technical debt
-  # upgrade #########################
-  "upgrade":
-    color: "aaffc3"
-    description: Restructure existing code to pay off a technical debt
+  # dacpac #########################
+  "dacpac":
+    color: "333333"
+    description: Project requires a DacPac PR
+  # easy #########################
+  "easy":
+    color: "FEC4C4"
+    description: change that is super easy to make
+  # followup required #########################
+  "followup required":
+    color: "BA46DD"
+    description: This change requires follow up with affected users
+  # hack-a-thon ######################### 
+  "hack-a-thon":
+    color: "F58231"
+    description: Quick, surgical changes to be made in the weekly hack-a-thon hour
   # performance #########################
   "performance":
     color: "FFE119"
     description: Restructure/create new code to improve perfomance
     alias: ["perf"]
-  # hack-a-thon ######################### 
-  "hack-a-thon":
-    color: "F58231"
-    description: Quick, surgical changes to be made in the weekly hack-a-thon hour
-  # support issue #########################
-  "support issue":
-    color: "4363D8"
-    description: Issue was created because of a problem brought up to support
-  # followup required #########################
-  "followup required":
-    color: "BA46DD"
-    description: This change requires follow up with affected users
+  # refactor #########################
+  "refactor":
+    color: "3CB44B"
+    description: Restructure existing code to pay off a technical debt
   # support followup required #########################
   "support followup required":
     color: "DCBEFF"
     description: The support team to let a user know when this is done
-  # canceled #########################
-  "canceled":
-    color: "333333"
-    description: Issue not needed anymore
+  # support issue #########################
+  "support issue":
+    color: "4363D8"
+    description: Issue was created because of a problem brought up to support
+  # upgrade #########################
+  "upgrade":
+    color: "aaffc3"
+    description: Restructure existing code to pay off a technical debt
 # Repositories
 repos:
   # BackEnd #########################
@@ -51,6 +55,16 @@ repos:
     labels:
       <<: *common
   Flow:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *common
+  Joule:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *common
+  OtherTools:
     config:
       removeUnconfiguredLabels: true
     labels:
@@ -71,12 +85,22 @@ repos:
     labels:
       <<: *common
   # FrontEnd ########################
-  flux:
+  instant-quote:
     config:
       removeUnconfiguredLabels: true
     labels:
       <<: *common
   loan-application:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *common
+  loan-fulfillment:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *common
+  micro-models:
     config:
       removeUnconfiguredLabels: true
     labels:
@@ -87,11 +111,6 @@ repos:
     labels:
       <<: *common
   my-account2:
-    config:
-      removeUnconfiguredLabels: true
-    labels:
-      <<: *common
-  instant-quote:
     config:
       removeUnconfiguredLabels: true
     labels:
@@ -111,7 +130,17 @@ repos:
       removeUnconfiguredLabels: true
     labels:
       <<: *common
+  pico-models:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *common
   rate-tracker:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *common
+  status-board:
     config:
       removeUnconfiguredLabels: true
     labels:
@@ -127,6 +156,11 @@ repos:
       removeUnconfiguredLabels: true
     labels:
       <<: *common
+  iac-deployments:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *common
   knowledge-base:
     config:
       removeUnconfiguredLabels: true
@@ -137,17 +171,27 @@ repos:
       removeUnconfiguredLabels: true
     labels:
       <<: *common
+  project-automation:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *common
+  QA-Automation:
+    config:
+      removeUnconfiguredLabels: true
+    labels:
+      <<: *common
   salesforce-sandbox:
     config:
       removeUnconfiguredLabels: true
     labels:
       <<: *common
-  TeamCitySettings:
+  sites:
     config:
       removeUnconfiguredLabels: true
     labels:
       <<: *common
-  sites:
+  TeamCitySettings:
     config:
       removeUnconfiguredLabels: true
     labels:
