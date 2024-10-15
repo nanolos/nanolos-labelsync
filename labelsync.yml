@@ -1,9 +1,5 @@
 # Labels
 labels: &common
-  # bug #########################
-  "bug":
-    color: "FF2323"
-    description: An existing feature isn't working/produces errors
   # dacpac #########################
   "dacpac":
     color: "333333"
@@ -20,15 +16,6 @@ labels: &common
   "hack-a-thon":
     color: "F58231"
     description: Quick, surgical changes to be made in the weekly hack-a-thon hour
-  # performance #########################
-  "performance":
-    color: "FFE119"
-    description: Restructure/create new code to improve perfomance
-    alias: ["perf"]
-  # refactor #########################
-  "refactor":
-    color: "3CB44B"
-    description: Restructure existing code to pay off a technical debt
   # support followup required #########################
   "support followup required":
     color: "DCBEFF"
@@ -37,10 +24,6 @@ labels: &common
   "support issue":
     color: "4363D8"
     description: Issue was created because of a problem brought up to support
-  # upgrade #########################
-  "upgrade":
-    color: "aaffc3"
-    description: Restructure existing code to pay off a technical debt
 # Repositories
 repos:
   # BackEnd #########################
